@@ -1,0 +1,167 @@
+Microsoft Windows [Version 10.0.16299.125]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\joann>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CAED-E2E3
+
+ Directory of C:\Users\joann
+
+02/21/2018  10:36 PM    <DIR>          .
+02/21/2018  10:36 PM    <DIR>          ..
+02/21/2018  02:44 PM                59 .bash_history
+02/21/2018  10:36 PM    <DIR>          .config
+02/14/2018  09:03 PM                57 .gitconfig
+01/17/2018  07:28 PM    <DIR>          .vscode
+02/21/2018  02:03 PM    <DIR>          3D Objects
+02/21/2018  02:03 PM    <DIR>          Contacts
+02/22/2018  08:55 AM    <DIR>          Desktop
+02/22/2018  01:03 PM    <DIR>          Documents
+02/22/2018  01:14 PM    <DIR>          Downloads
+02/21/2018  02:03 PM    <DIR>          Favorites
+02/21/2018  02:06 PM    <DIR>          Links
+02/21/2018  02:03 PM    <DIR>          Music
+02/21/2018  02:51 PM                 0 newFolder
+02/21/2018  02:06 PM    <DIR>          OneDrive
+02/21/2018  02:03 PM    <DIR>          Pictures
+02/21/2018  02:44 PM                 0 rd
+02/21/2018  02:04 PM    <DIR>          Saved Games
+02/21/2018  02:03 PM    <DIR>          Searches
+02/21/2018  03:01 PM    <DIR>          test
+02/14/2017  10:57 AM    <DIR>          Tracing
+02/21/2018  02:03 PM    <DIR>          Videos
+               4 File(s)            116 bytes
+              19 Dir(s)  77,970,493,440 bytes free
+
+C:\Users\joann>Desktop
+'Desktop' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\joann>cd Desktop
+
+C:\Users\joann\Desktop>md GitHubRepoAssignment
+
+C:\Users\joann\Desktop>cd GitHubRepoAssignment
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>git init
+Initialized empty Git repository in C:/Users/joann/Desktop/GitHubRepoAssignment/.git/
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>copy NUL
+        1 file(s) copied.
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CAED-E2E3
+
+ Directory of C:\Users\joann\Desktop\GitHubRepoAssignment
+
+02/22/2018  09:01 PM    <DIR>          .
+02/22/2018  09:01 PM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  77,971,595,264 bytes free
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>copy NUL readme.md
+        1 file(s) copied.
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>dir
+ Volume in drive C is OSDisk
+ Volume Serial Number is CAED-E2E3
+
+ Directory of C:\Users\joann\Desktop\GitHubRepoAssignment
+
+02/22/2018  09:04 PM    <DIR>          .
+02/22/2018  09:04 PM    <DIR>          ..
+02/22/2018  09:04 PM                 0 readme.md
+               1 File(s)              0 bytes
+               2 Dir(s)  77,971,152,896 bytes free
+
+C:\Users\joann\Desktop\GitHubRepoAssignment> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>git add .
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   readme.md
+
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values (EXPERIMENTAL)
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>git commit -m "commit"
+[master (root-commit) aa1967e] commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+C:\Users\joann\Desktop\GitHubRepoAssignment> git remote add origin https://github.com/anniemou/GitHubRepoAssignment.git
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 204 bytes | 204.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anniemou/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\joann\Desktop\GitHubRepoAssignment>
